@@ -37,7 +37,7 @@ namespace TropicalClock
             // timerDateTime
             // 
             this.timerDateTime.Enabled = true;
-            this.timerDateTime.Interval = 16;
+            this.timerDateTime.Interval = 8;
             this.timerDateTime.Tick += new System.EventHandler(this.timerDateTime_Tick);
             // 
             // labelTime
@@ -51,6 +51,7 @@ namespace TropicalClock
             this.labelTime.Size = new System.Drawing.Size(787, 211);
             this.labelTime.TabIndex = 1;
             this.labelTime.Text = "00:00:00.00";
+            this.labelTime.Click += new System.EventHandler(this.labelTime_Click);
             // 
             // FormTropicalClock
             // 
